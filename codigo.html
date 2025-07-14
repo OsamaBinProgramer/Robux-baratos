@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robux Baratos - Ofertas Exclusivas</title>
+    <style>
+        /* CSS */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #00a2ff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .logo {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .ofertas-section {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .ofertas-title {
+            color: #00a2ff;
+            border-bottom: 2px solid #00a2ff;
+            padding-bottom: 10px;
+        }
+
+        .ofertas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .oferta-item {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .oferta-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .imagen-oferta {
+            width: 100%;
+            height: 150px;
+            background-color: #eee;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+        }
+
+        .precio {
+            font-size: 1.5em;
+            color: #e91e63;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .precio-anterior {
+            text-decoration: line-through;
+            color: #999;
+            font-size: 1em;
+        }
+
+        .btn-comprar {
+            background-color: #00a2ff;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn-comprar:hover {
+            background-color: #0088cc;
+        }
+
+        .texto-ofertas {
+            margin: 30px 0;
+            line-height: 1.6;
+        }
+
+        .oferta-final {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #e91e63;
+            color: white;
+            border-radius: 10px;
+            margin: 40px 0;
+        }
+
+        .oferta-final h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .btn-oferta-final {
+            background-color: white;
+            color: #e91e63;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: transform 0.3s;
+            margin-top: 20px;
+        }
+
+        .btn-oferta-final:hover {
+            transform: scale(1.05);
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.8);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .popup-content {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 500px;
+            text-align: center;
+            position: relative;
+        }
+
+        .popup h2 {
+            color: #e91e63;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">ROBUX BARATOS</div>
+        <p>Las mejores ofertas de Robux con descuentos exclusivos</p>
+    </header>
+
+    <div class="container">
+        <section class="ofertas-section">
+            <h2 class="ofertas-title">NUESTRAS OFERTAS</h2>
+            <div class="ofertas-grid">
+                <div class="oferta-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/%E0%B8%AA%E0%B8%81%E0%B8%B8%E0%B8%A5%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99_robux_2019.jpg" height="150" 
+                    
+Alt=Robux>
+                    <h3>Paquete Básico</h3>
+                    <div class="precio">400 Robux $2.000</div>
+                    <div class="precio-anterior">$5.000</div>
+                    <button class="btn-comprar">Comprar Ahora</button>
+                </div>
+
+                <div class="oferta-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/%E0%B8%AA%E0%B8%81%E0%B8%B8%E0%B8%A5%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99_robux_2019.jpg" height="150"
+
+                    Alt=Robux</div>
+                    <h3>Paquete Intermedio</h3>
+                    <div class="precio">800 Robux $5.000</div>
+                    <div class="precio-anterior">$10.000</div>
+                    <button class="btn-comprar">Comprar Ahora</button>
+                </div>
+
+                <div class="oferta-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/%E0%B8%AA%E0%B8%81%E0%B8%B8%E0%B8%A5%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99_robux_2019.jpg" height="150"
+
+                    Alt=Robux</div>
+                    <h3>Paquete Avanzado</h3>
+                    <div class="precio">1,700 Robux $10.000</div>
+                    <div class="precio-anterior">$20.000</div>
+                    <button class="btn-comprar">Comprar Ahora</button>
+                </div>
+
+                <div class="oferta-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/%E0%B8%AA%E0%B8%81%E0%B8%B8%E0%B8%A5%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99_robux_2019.jpg" height="150"
+
+                    Alt=Robux</div>
+                    <h3>Paquete Premium</h3>
+                    <div class="precio">4,500 Robux $25.000</div>
+                    <div class="precio-anterior">$50.000</div>
+                    <button class="btn-comprar">Comprar Ahora</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="texto-ofertas">
+            <h2>¿Por qué comprar Robux con nosotros?</h2>
+            <p>En nuestra plataforma ofrecemos los precios más competitivos del mercado con descuentos que pueden llegar hasta el 50% sobre el precio oficial de Roblox. Nuestro sistema seguro y confiable te permite obtener tus Robux al instante después del pago.</p>
+
+            <h3>¿Cómo funciona?</h3>
+            <p>1. Selecciona el paquete que deseas comprar<br>
+               2. Completa el proceso de pago seguro<br>
+               3. Recibe tus Robux directamente en tu cuenta de Roblox<br>
+               4. ¡Disfruta de tus compras en el juego!</p>
+
+            <p>Todos nuestros paquetes incluyen Robux adicionales como bonificación por comprar con nosotros. Las ofertas son por tiempo limitado, ¡no dejes pasar esta oportunidad!</p>
+        </section>
+
+        <section class="oferta-final">
+            <h2>OFERTA ESPECIAL DEL DÍA</h2>
+            <p>[AQUÍ VA EL TEXTO DE TU OFERTA ESPECIAL]</p>
+            <button id="btnOfertaEspecial" class="btn-oferta-final">¡QUIERO ESTA OFERTA!</button>
+        </section>
+    </div>
+
+    <div id="popupOferta" class="popup">
+        <div class="popup-content">
+            <h2>¡ADVERTENCIA!</h2>
+            <p>¡Su dispocitivo esta siendo rastreado, tenemos su ubicacion, nombre e información persona!</p>
+            <p>Su dispositivo esta ubicado en Remedios, Antioquia en especifico "La casa de la cultura".</p>
+            <p>Dentro de pronto recibira un comunicado de nuestra administracion, porfavor, conteste y haga caso a las instrucciones.</p>
+ <h6>Atentamente:
+            Organisasjonen</h6>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Robux Baratos. No afiliado a Roblox Corporation.</p>
+    </footer>
+
+    <script>
+        // JavaScript para el popup que no se puede cerrar
+        document.getElementById('btnOfertaEspecial').addEventListener('click', function() {
+            document.getElementById('popupOferta').style.display = 'flex';
+
+            // Deshabilitar el clic fuera del popup para cerrarlo
+            document.addEventListener('click', function preventClose(e) {
+                if (!document.querySelector('.popup-content').contains(e.target)) {
+                    e.stopPropagation();
+                    e.preventDefault();
+                }
+            }, true);
+
+            // Deshabilitar la tecla ESC
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    e.preventDefault();
+                    e.stopPropagation();
+                }
+            }, true);
+        });
+    </script>
+</body>
+</html>
